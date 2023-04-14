@@ -1,13 +1,22 @@
 return {
+  -- add themes
+  {
+    "sainnhe/everforest",
+    init = function() vim.g.everforest_background = "soft" end,
+  },
   {
     "navarasu/onedark.nvim",
     opts = {
-      style = "darker",
+      style = "deep",
       code_style = {
         comments = "none",
       },
     },
   },
+
+  -- disable neo-tree
+  { "nvim-neo-tree/neo-tree.nvim", enabled = false },
+
   -- customize alpha options
   -- {
   --   "goolord/alpha-nvim",
