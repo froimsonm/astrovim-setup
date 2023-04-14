@@ -1,4 +1,13 @@
 return {
+  {
+    "navarasu/onedark.nvim",
+    opts = {
+      style = "darker",
+      code_style = {
+        comments = "none",
+      },
+    },
+  },
   -- customize alpha options
   -- {
   --   "goolord/alpha-nvim",
