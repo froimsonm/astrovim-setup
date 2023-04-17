@@ -26,6 +26,8 @@ local maps = {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>a"] = { "gg<S-v>G", desc = "Select All" },
+    ["<leader>le"] = { "<cmd>EslintFixAll<cr>", desc = "Fix All ESLint Errors" },
   },
   t = {
     -- setting a mapping to false will disable it
