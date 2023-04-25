@@ -12,7 +12,7 @@ local maps = {
   n = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
-    ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
+    ["<leader>bn"] = { "<cmd>enew<cr>", desc = "New Buffer" },
     ["<leader>bD"] = {
       function()
         require("astronvim.utils.status").heirline.buffer_picker(
@@ -23,9 +23,7 @@ local maps = {
     },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
-    ["<leader>b"] = { name = "Buffers" },
-    -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    -- ["<leader>b"] = { name = "Buffers" },
     ["<leader>a"] = { "gg<S-v>G", desc = "Select All" },
     ["<leader>le"] = { "<cmd>EslintFixAll<cr>", desc = "Fix All ESLint Errors" },
   },
