@@ -25,7 +25,9 @@ local maps = {
     -- this is useful for naming menus
     -- ["<leader>b"] = { name = "Buffers" },
     ["<leader>a"] = { "gg<S-v>G", desc = "Select All" },
-    ["<leader>le"] = { "<cmd>EslintFixAll<cr>", desc = "Fix All ESLint Errors" },
+    ["<leader>le"] = { "<cmd>EslintFixAll<cr>", desc = "Fix All Eslint Errors" },
+    -- list todos:
+    ["<leader>ft"] = { "<cmd>TodoTelescope<cr>", desc = "Find Todos" },
   },
   t = {
     -- setting a mapping to false will disable it
