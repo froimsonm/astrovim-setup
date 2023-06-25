@@ -19,7 +19,10 @@ return {
         custom = { "^.git$", "^node_modules$" },
       },
       git = {
-        enable = false,
+        enable = true,
+        show_on_dirs = true,
+        show_on_open_dirs = true,
+        timeout = 400,
       },
       log = {
         enable = true,
